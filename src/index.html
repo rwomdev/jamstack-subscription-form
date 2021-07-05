@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Monthly Bytes</title>
+</head>
+<body>
+    <header>
+        <h1>Monthly Bytes</h1>
+    </header>
+    <div class="content">
+        <p>Please fill-up the form below to subscribe to our <b>M</b>onthly <b>B</b>ytes newsletter.
+        We send you the quality content every month.</p>
+
+        <form action="/src/success.html" method="POST" name="subscription">
+            <label for="fullName">Full Name</label>
+            <input type="text" name="fullName" id="fullName"
+                placeholder="We want to know your name" />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"
+                placeholder="Tell us your email">
+
+            <div>
+                <h2>I want to get it</h2>
+                <label>
+                    <input type="radio" name="frequency" value="daily" checked>Daily
+                </label>
+                <label>
+                    <input type="radio" name="frequency" value="weekly">Weekly
+                </label>
+            </div>
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</body>
+</html>
