@@ -15,7 +15,11 @@
         <p>Please fill-up the form below to subscribe to our <b>M</b>onthly <b>B</b>ytes newsletter.
         We send you the quality content every month.</p>
 
-        <form action="/src/success.html" method="POST" name="subscription" data-netlify="true">
+        <form action="/src/success.html" method="POST" 
+            name="subscription" 
+            data-netlify="true"
+            netlify-honeypot="bot-field>
+            
             <label for="fullName">Full Name</label>
             <input type="text" name="fullName" id="fullName"
                 placeholder="We want to know your name" />
@@ -33,6 +37,11 @@
                     <input type="radio" name="frequency" value="weekly">Weekly
                 </label>
             </div>
+            <p class="hidden">
+                <label>Don’t fill this out if you’re human: 
+                     <input name="bot-field" />
+                </label>
+             </p>             
 
             <button type="submit">Subscribe</button>
         </form>
